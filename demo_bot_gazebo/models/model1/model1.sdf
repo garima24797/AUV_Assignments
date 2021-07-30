@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+ 
+  <model name="model1">
+      <pose>5 2 0.5 0 0 0</pose>
+      <static>true</static>
+      <inertial>
+        <mass value="5"/>
+        <origin xyz="0.5 0.5 0.5"/>
+        <inertia ixx="0.83" ixy="0.0" ixz="0.0" iyy="0.83" iyz="0.0" izz="0.83"/>
+      </inertial>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+</sdf>
